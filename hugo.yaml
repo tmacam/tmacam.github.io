@@ -1,0 +1,43 @@
+baseURL: https://tmacam.github.io/
+languageCode: en-us
+title: Burocrata.org
+theme: PaperMod
+
+
+params:
+  title: "Burocrata.org"
+  description: "Tiago Macambira's ramblings on technology, politics, and society."
+  author: "Tiago Alves Macambira"
+
+  ShowRssButtonInSectionTermList: true
+  
+  socialIcons:
+    - name: x
+      url: "https://x.com/TiagoMacambira"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/tmacam/"
+    - name: github
+      url: "https://github.com/tmacam"
+    # - name: cv
+    #   url: "/cv.pdf"
+    - name: rss
+      url: "/index.xml"
+
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  profileMode:
+    enabled: true
+    title: "burocrata.org" # optional default will be site title
+    subtitle: "This is a subtitle - glad you asked"
+    # imageUrl: "<image link>" # optional
+    # imageTitle: "<title of image as alt>" # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    # buttons:
+    #   - name: Archive
+    #     url: "/archive"
+    #   - name: Github
+    #     url: "https://github.com/"
