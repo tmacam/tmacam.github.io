@@ -1,16 +1,27 @@
 {
   "name": "Hugo Development Container",
-  "build": {
-    "dockerfile": "Dockerfile"
+  // https://github.com/sergsoares/sergsoares.github.io/blob/3d9c17778280c513fcd5ec6b5eef3da1b21535a6/content/posts/github-codespaces-with-hugo.md?plain=1#L2
+  //  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/go",
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:1": {
+        "extended": true
+    }
   },
   "customizations": {
     "vscode": {
       "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "editorconfig.editorconfig",
         "yzhang.markdown-all-in-one",
+        "redhat.vscode-yaml",
         "streetsidesoftware.code-spell-checker"
       ]
     },
     "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash",
+      "files.defaultLanguage": "markdown",
       "markdownlint.config": {
         "default": true
       }
