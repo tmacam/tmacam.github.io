@@ -1,0 +1,22 @@
+{
+  "name": "Hugo Development Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yzhang.markdown-all-in-one",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    },
+    "settings": {
+      "markdownlint.config": {
+        "default": true
+      }
+    }
+  },
+  "forwardPorts": [1313],
+  "postCreateCommand": "hugo server --bind 0.0.0.0",
+  "remoteUser": "vscode"
+}
